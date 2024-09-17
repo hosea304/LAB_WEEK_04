@@ -52,7 +52,7 @@ class DetailFragment : Fragment() {
         val backButton = view.findViewById<View>(R.id.back_button)
         backButton.setOnClickListener {
             Navigation.createNavigateOnClickListener(
-                R.id.coffee_detail_action
+                R.id.listFragment
             ).onClick(backButton)
         }
     }
