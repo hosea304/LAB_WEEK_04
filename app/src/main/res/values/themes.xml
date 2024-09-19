@@ -13,8 +13,10 @@
 
     <style name="Theme.NavigationDrawer.AppBarOverlay"
         parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.NavigationDrawer.PopupOverlay"
         parent="ThemeOverlay.AppCompat.Light" />
+
 
     <style name="Theme.LAB_WEEK_04" parent="Base.Theme.LAB_WEEK_04" />
 </resources>

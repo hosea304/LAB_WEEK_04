@@ -1,18 +1,13 @@
 package com.example.lab_week_04
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentContainerView
-import androidx.fragment.app.ListFragment
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.example.lab_week_04.R
+import androidx.navigation.ui.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -28,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 //and adding them to the draw
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.listFragment, R.id.favoritesFragment, R.id.listFragment
+                R.id.listFragment, R.id.favoritesFragment, R.id.cafeFragment
             ), findViewById(R.id.drawer_layout)
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -44,4 +39,3 @@ class MainActivity : AppCompatActivity() {
                 super.onSupportNavigateUp()
     }
 }
-
